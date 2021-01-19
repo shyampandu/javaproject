@@ -7,11 +7,7 @@ pipeline {
                 echo 'Hello World21'
             }
         }
-		stage('Git') {
-            steps {
-                git "https://github.com/shyampandu/javaproject.git"
-            }
-        }
+		
 		stage('CLean') {
             steps {
                 sh "mvn clean "
